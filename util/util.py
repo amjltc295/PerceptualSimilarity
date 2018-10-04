@@ -7,6 +7,8 @@ import re
 import numpy as np
 import os
 import collections
+import matplotlib
+matplotlib.use("AGG")
 import matplotlib.pyplot as plt
 from scipy.ndimage.interpolation import zoom
 from skimage.measure import compare_ssim
