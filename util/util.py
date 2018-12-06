@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from scipy.ndimage.interpolation import zoom
 from skimage.measure import compare_ssim
 import torch
-from IPython import embed
+# from IPython import embed
 import cv2
 from datetime import datetime
 
@@ -373,7 +373,7 @@ class zeroClipper(object):
         self.frequency = frequency
 
     def __call__(self, module):
-        embed()
+        # embed()
         if hasattr(module, 'weight'):
             # module.weight.data = torch.max(module.weight.data, 0)
             module.weight.data = torch.max(module.weight.data, 0) + 100
